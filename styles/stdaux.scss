@@ -1,0 +1,139 @@
+/*
+* StdAux Style Sheets for Fermat v1.0.0 (https://stdaux.com/)
+* Copyright 2019 StdAux
+*
+*
+
+/* ############### FONTS IMPORT ############### */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400');
+
+// Local font
+@import url('https://fonts.googleapis.com/css?family=IBM Plex Sans');
+@import url('https://fonts.googleapis.com/css?family=Inter');
+
+// Variables
+@import "variables";
+
+// Mixins
+@import "mixins";
+
+/* ############### BOOTSTRAP FRAMEWORK ############### */
+@import "../node_modules/animate.css/animate.min.css";
+
+#map {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* ############### BOOTSTRAP OVERRIDES ############### */
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "bootstrap/root";
+@import "bootstrap/reboot";
+@import "bootstrap/type";
+@import "bootstrap/images";
+@import "bootstrap/code";
+@import "bootstrap/grid";
+@import "bootstrap/tables";
+@import "bootstrap/forms";
+@import "bootstrap/buttons";
+@import "bootstrap/transitions";
+@import "bootstrap/dropdown";
+@import "bootstrap/button-group";
+@import "bootstrap/input-group";
+@import "bootstrap/custom-forms";
+@import "bootstrap/nav";
+@import "bootstrap/navbar";
+@import "bootstrap/card";
+@import "bootstrap/breadcrumb";
+@import "bootstrap/pagination";
+@import "bootstrap/badge";
+@import "bootstrap/jumbotron";
+@import "bootstrap/alert";
+@import "bootstrap/progress";
+@import "bootstrap/media";
+@import "bootstrap/list-group";
+@import "bootstrap/close";
+@import "bootstrap/modal";
+@import "bootstrap/tooltip";
+@import "bootstrap/popover";
+@import "bootstrap/carousel";
+@import "bootstrap/utilities";
+@import "bootstrap/print";
+
+
+@import "bootstrap/mixins/breakpoints";
+@import "bootstrap/mixins/grid-framework";
+@import "bootstrap/mixins/grid";
+
+@import "bootstrap/grid";
+@import "bootstrap/utilities/display";
+@import "bootstrap/utilities/flex";
+
+/* ############### ADDON COMPONENTS STYLES ############### */
+@import "stdaux/menu";
+@import "stdaux/accordion";
+@import "stdaux/avatar";
+@import "stdaux/button-group";
+@import "stdaux/card";
+@import "stdaux/divider";
+@import "stdaux/dropdown";
+@import "stdaux/image";
+@import "stdaux/link";
+@import "stdaux/list";
+@import "stdaux/marker";
+@import "stdaux/modal";
+@import "stdaux/nav";
+@import "stdaux/navbar";
+@import "stdaux/off-canvas";
+@import "stdaux/overlay";
+@import "stdaux/placeholder";
+@import "stdaux/search";
+@import "stdaux/steps";
+@import "stdaux/tab";
+
+/* ############### PLUGINS STYLES ############### */
+@import "lib/pagepiling";
+@import "lib/datatables";
+@import "lib/datepicker";
+@import "lib/flot";
+@import "lib/jquery-steps";
+@import "lib/morris";
+@import "lib/parsley";
+@import "lib/jqvmap";
+@import "lib/quill";
+@import "lib/rangeslider";
+@import "lib/scrollbar";
+@import "lib/select2";
+@import "lib/spectrum";
+@import "lib/tagsinput";
+@import "lib/typeahead";
+
+/* ############### PANEL STYLES ############### */
+@import "panels/backdrop";
+@import "panels/header";
+@import "panels/logo";
+@import "panels/sidebar";
+@import "panels/aside";
+@import "panels/content";
+@import "panels/footer";
+@import "panels/settings";
+
+
+/* ############### UTILITIES/HELPER CLASSES ############### */
+@import "util/background";
+@import "util/border";
+@import "util/height";
+@import "util/margin";
+@import "util/misc";
+@import "util/padding";
+@import "util/position";
+@import "util/transform";
+@import "util/typography";
+@import "util/width";
+
+

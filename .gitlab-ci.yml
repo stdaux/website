@@ -1,0 +1,19 @@
+stages:
+  - build
+  - deploy
+
+build-job:
+  stage: build
+
+  before_script:
+    - fuser -k 3000/tcp
+
+  script:
+    - npm install
+    - cp sample.env .env
+    - pm2 start server-pm2.json
+  
+  after_script:
+    - fuser -k 3000/tcp
+
+
