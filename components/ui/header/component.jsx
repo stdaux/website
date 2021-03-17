@@ -6,7 +6,6 @@ import Router, { useRouter }  from 'next/router';
 
 import { getUserToken, getCookie } from  '@/actions/user/actions'
 import axios from 'axios'
-import {FermatUrls} from "@/actions/fermat/urls"
 import Dropdown from 'react-bootstrap/Dropdown'
 import { CustomMenu, CustomToggle } from '@/components/ui/dropdown';
 import Avatar from "@/components/ui/avatar"
@@ -25,7 +24,7 @@ const Header = (props) => {
         link,
         children,
         className,
-        theme,
+        backgroundColor,
         disabled,
         active,
         onClick,
@@ -33,7 +32,7 @@ const Header = (props) => {
         background,
         target,
         withoutSearch,
-        enableSocial,
+        user,
     } = props;
 
     const [sideMenuActive, setSideMenuActive] = useState(false);
@@ -42,15 +41,12 @@ const Header = (props) => {
     header = (
         <>  
             <header>
-                <nav className={`navbar navbar-top-default navbar-expand-lg navbar-standard pd-y-10 ${className}`}>
+                <nav className={`bg-${backgroundColor} navbar navbar-top-default navbar-expand-lg navbar-standard pd-t-10 pd-b-10`}>
                     <div className="container-fluid d-flex justify-content-between align-items-center">
                         <div className="lh-5">
-                            <a href="https://stdaux.com" title="Home of StdAux" className="link logo scroll">
-                                <img src="/images/logo-white-stdaux.png" className="stdaux-logo tx-white ht-100" alt="logo"/>
+                            <a href="https://stdaux.com" title="Pioneer Power Systems | Home" className="link logo scroll">
+                                <img src="/images/logo/stdaux/logo-white-stdaux.png" className="stdaux-logo pd-l-5" alt="logo"/>
                             </a>
-                        </div>
-                        <div className="lh-5">
-                            {children}
                         </div>
                         <div className="d-flex align-items-center">
                             <div className="mg-x-10 justify-content-center">
@@ -71,14 +67,14 @@ const Header = (props) => {
                         <div className="row side-nav d-flex justify-content-center flex-row">
                             <div className="col-lg-2 col-sm-4 tx-roboto tx-white justify-content-center">
                                 <h2 className="tx-roboto tx-white">Services</h2>
+                                <a href="/services/air">
+                                    <h6 className="tx-lato tx-white">AI & Robotics</h6>
+                                </a>
                                 <a href="/services/energy">
                                     <h6 className="tx-lato tx-white">Renewable Energy</h6>
                                 </a>
                                 <a href="/services/it">
                                     <h6 className="tx-lato tx-white">Information Technology</h6>
-                                </a>
-                                <a href="/services/air">
-                                    <h6 className="tx-lato tx-white">AI & Robotics</h6>
                                 </a>
                             </div>
                             <div className="col-lg-2 col-sm-4">
@@ -101,7 +97,7 @@ const Header = (props) => {
                                 <a href="/partners/">
                                     <h6 className="tx-lato tx-white">Suppliers</h6>
                                 </a>
-                                <a href="/legal/supplier-code-of-confuct">
+                                <a href="/legals/supplier-code-of-confuct">
                                     <h6 className="tx-lato tx-white">Suppliers Code of Conduct</h6>
                                 </a>
                                 <a href="/quality/process">
@@ -113,41 +109,20 @@ const Header = (props) => {
                             </div>
                             <div className="col-lg-2 col-sm-4">
                                 <h2 className="tx-roboto tx-white">Policies</h2>
-                                <a href="/legal/hse-policy">
+                                <a href="/legals/hse-policy">
                                     <h6 className="tx-lato tx-white">Health, Safety & Enviroment Policy</h6>
                                 </a>
-                                <a href="/legal/privacy-policy">
+                                <a href="/legals/privacy-policy">
                                     <h6 className="tx-lato tx-white">Privacy Policy</h6>
                                 </a>
-                                <a href="/legal/employee-code-of-conduct">
+                                <a href="/legals/employee-code-of-conduct">
                                     <h6 className="tx-lato tx-white">Employee Code of Conduct</h6>
                                 </a>
-                                <a href="/legal/certificates">
+                                <a href="/legals/certificates">
                                     <h6 className="tx-lato tx-white">Certificates</h6>
                                 </a>
-                                <a href="/legal">
-                                    <h6 className="tx-lato tx-white">Legal</h6>
-                                </a>
-                            </div>
-                            <div className="col-lg-2 col-sm-4">
-                                <h2 className="tx-roboto tx-white">Open</h2>
-                                <a href="/open/data">
-                                    <h6 className="tx-lato tx-white">Earth Data</h6>
-                                </a>
-                                <a href="https://terra.stdaux.com">
-                                    <h6 className="tx-lato tx-white">Earth Insights</h6>
-                                </a>
-                                <a href="/open/data/nasa">
-                                    <h6 className="tx-lato tx-white">NASA</h6>
-                                </a>
-                                <a href="/open/data/esa">
-                                    <h6 className="tx-lato tx-white">ESA</h6>
-                                </a>
-                                <a href="https://developers.google.com/earth-engine/datasets/catalog">
-                                    <h6 className="tx-lato tx-white">GEE</h6>
-                                </a>
-                                <a href="https://github.com/stdaux">
-                                    <h6 className="tx-lato tx-white">Github</h6>
+                                <a href="/legals">
+                                    <h6 className="tx-lato tx-white">Legals</h6>
                                 </a>
                             </div>
                             <div className="col-lg-2 col-sm-4">
@@ -171,8 +146,27 @@ const Header = (props) => {
                                     <h6 className="tx-lato tx-white">News</h6>
                                 </a>
                             </div>
-                        </div>                        
-
+                        </div>
+                        
+                        <nav className="side-nav active">
+                            <ul className="navbar-nav" id="side-menu">
+                                <li className="nav-item">
+                                    <a className="nav-link link" href="/">Home</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link link" href="/services">Services</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link link" href="/research">Research</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link link" href="/about">About Us</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link link" href="/locations">Locations</a>
+                                </li>
+                            </ul>
+                        </nav>
                         <div className="side-footer text-white w-100">
                             <ul className="social-icons-simple">
                                 {process.env.FACEBOOK_LINK && 
@@ -188,12 +182,11 @@ const Header = (props) => {
                                 <li className="animated-wrap"><a href={process.env.INSTAGRAM_LINK} className="animated-element"><FiInstagram/></a> </li>
                                 }
                             </ul>
-                            <p className="whitecolor">&copy; 2020 StdAux. Made With Love by <a className="web-link text-white" href="https://stdaux.com/design">Design Team of StdAux</a></p>
+                            <p className="whitecolor">&copy; 2021 Pioneer Power Systems. Made With Love by <a className="web-link text-white" href="https://stdaux.com/design">Design Team of StdAux</a></p>
                         </div>
                     </div>
                 </div>
                 }
-                {enableSocial &&
                 <div className="slider-social d-md-block d-none">
                     <ul className="list-unstyled">
                         {process.env.FACEBOOK_LINK && 
@@ -210,7 +203,6 @@ const Header = (props) => {
                         }
                     </ul>
                 </div>
-                }
             </header>
         </>
     );
@@ -221,7 +213,7 @@ Header.propTypes = {
     children: PropTypes.node,
     className: PropTypes.string,
     link: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
-    theme: PropTypes.string,
+    backgroundColor: PropTypes.string,
     disabled: PropTypes.bool,
     active: PropTypes.bool,
     withoutSearch: PropTypes.bool,
@@ -231,11 +223,11 @@ Header.propTypes = {
     buttonClicked: PropTypes.func,
     background: PropTypes.string,
     target: PropTypes.string,
-    enableSocial: PropTypes.bool,
+    user: PropTypes.object,
 };
 
-Error.defaultProps = {
-    enableSocial: true,
+Header.defaultProps = {
+    backgroundColor: "",
 }
 
 export default Header;

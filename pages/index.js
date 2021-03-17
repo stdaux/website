@@ -62,48 +62,21 @@ const Main = (props) => {
                                     <div className="row pos-absolute t-100">
                                         <div className="col-md-12">
                                             <div className="d-flex flex-column text-center">
-                                                <h1 className="tx-roboto tx-white">Partner in Green & Sustainable Business</h1>
+                                                <h1 className="tx-roboto tx-white">Accelerating Transition to Sustainable Development</h1>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="pos-absolute b-100">
-                                        <div className="row">
-                                            <div className="col-12 pd-5">
-                                                <ul className="nav justify-content-between"> 
-                                                    <div className="nav-item pd-x-10 d-flex flex-column">
-                                                        <h1 className="tx-roboto tx-white align-self-center">500+</h1>
-                                                        <p className="tx-lato tx-white">Projects Completed</p>
-                                                    </div>
-                                                    <div className="nav-item pd-x-10 d-flex flex-column">
-                                                        <h1 className="tx-roboto tx-white align-self-center">500+</h1>
-                                                        <p className="tx-lato tx-white">Corporate Client</p>
-                                                    </div>
-                                                    <div className="nav-item pd-x-10 d-flex flex-column">
-                                                        <h1 className="tx-roboto tx-white align-self-center">500+</h1>
-                                                        <p className="tx-lato tx-white">Operating Capacity</p>
-                                                    </div>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="pos-absolute b-50 wd-50p">
-                                        <div className="row">
-                                            <div className="col-lg-4 col-sm-6 pd-5">
-                                                <button type="button" className="btn btn-dark rounded-pill btn-block">View brochure</button>
-                                            </div>
-                                            <div className="col-lg-4 pd-5">
-                                                <button type="button" className="btn btn-light rounded-pill btn-block">Enquire Now</button>
-                                            </div>
-                                            <div className="col-lg-4 pd-5">
-                                                <button type="button" className="btn btn-light rounded-pill btn-block">Call Us</button>
-                                            </div>
+                                        <div className="d-flex flex-column text-center">
+                                            <h3 className="tx-roboto tx-white">Accelerating Transition to Sustainable Development</h3>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="pos-absolute b-10 l-10 bg-white">
-                                    <p className="tx-black tx-10 mg-x-5 mg-y-0">Money-back guarantee</p>
+                                    <p className="tx-black tx-10 mg-x-5 mg-y-0">40 MWp Solar Power Plant, Dubai UAE</p>
                                 </div>
                             </section>
+
                             <section className="section bg-services">
                                 <div className="bg-overlay bg-black op-4">
                                 </div>
@@ -112,7 +85,7 @@ const Main = (props) => {
                                         <div className="col-md-12">
                                             <div className="d-flex flex-column text-center">
                                                 <h1 className="tx-roboto tx-white">Services & Solutions</h1>
-                                                <h5 className="tx-sans tx-white">Customized Services & Solutions to meet specific requirement of the Client Business</h5>
+                                                <h5 className="tx-sans tx-white">We provide services & solution in the following sectors</h5>
                                             </div>
                                         </div>
                                     </div>
@@ -139,7 +112,7 @@ const Main = (props) => {
                                     <div className="pos-absolute b-50 wd-30p">
                                         <div className="row">
                                             <div className="col-lg-6 pd-5">
-                                                <button type="button" className="btn btn-dark rounded-pill btn-block">View Past Works</button>
+                                                <button type="button" className="btn btn-dark rounded-pill btn-block">Explore Service</button>
                                             </div>
                                             <div className="col-lg-6 pd-5">
                                                 <button type="button" className="btn btn-light rounded-pill btn-block">Learn More</button>
@@ -151,40 +124,7 @@ const Main = (props) => {
                                     <p className="tx-black tx-10 mg-x-5 mg-y-0">Money-back guarantee</p>
                                 </div>
                             </section>
-                            <section className="section bg-partners">
-                                <div className="bg-overlay bg-black op-4">
-                                </div>
-                                <div className="container full-screen d-flex align-items-center">
-                                    <div className="row pos-absolute t-100">
-                                        <div className="col-md-12">
-                                            <div className="d-flex flex-column">
-                                                <h1 className="tx-roboto tx-white">Partners</h1>
-                                                <h5 className="tx-lato tx-white">Organizations with whom we are working.</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="row row-xs">
-                                        <ul className="nav justify-content-center"> 
-                                            <div className="nav-item d-flex justify-content-center flex-column align-items-center">
-                                                <img src="images/ge.png" className="pd-x-10 stdaux-logo" alt="logo"/>
-                                                <p className="tx-white tx-10 mg-x-5 pd-t-5 mg-y-0">General Electric</p>
-                                            </div>
-                                            <div className="nav-item d-flex justify-content-center flex-column align-items-center">
-                                                <img src="images/abb.png" className="pd-x-10 stdaux-logo" alt="logo"/>
-                                                <p className="tx-white tx-10 mg-x-5 pd-t-5 mg-y-0">ABB</p>
-                                            </div>
-                                            <div className="nav-item d-flex justify-content-center flex-column align-items-center">
-                                                <img src="images/siemens.png" className="pd-x-10 stdaux-logo" alt="logo"/>
-                                                <p className="tx-white tx-10 mg-x-5 pd-t-5 mg-y-0">Siemens</p>
-                                            </div>
-                                            <div className="nav-item d-flex justify-content-center flex-column align-items-center">
-                                                <img src="images/rockwell.png" className="pd-x-10 stdaux-logo" alt="logo"/>
-                                                <p className="tx-white tx-10 mg-x-5 pd-t-5 mg-y-0">Rockwell</p>
-                                            </div>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </section>
+
                             <section className="section bg-research">
                                 <div className="bg-overlay bg-black op-4">
                                 </div>

@@ -57,7 +57,7 @@ const LegalPage = (props) => {
                 title="Legal Policies | Fermat | StdAux"
                 description="List of Legal Policies followed by Fermat | StdAux"
             />
-            <Header className={"bg-black"}/>
+            <Header backgroundColor="black"/>
 
             <div className="content pd-0">
                 <div className="content-body">
