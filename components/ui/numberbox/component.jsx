@@ -14,8 +14,6 @@ import { DataEngineUrls } from "@/actions/dataengine/urls";
 import { getUserToken, getCookie } from  '@/actions/user/actions'
 import { useInterval } from 'react-use';
 
-import WidgetParametersContext from "@/components/widgets/widgets/context/widgetParametersContext";
-
 import ResizeAware from 'react-resize-aware';
 import { FiArrowDown, FiArrowUp } from "react-icons/fi";
 import Loading from '@/components/ui/loading';

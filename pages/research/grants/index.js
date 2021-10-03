@@ -8,7 +8,7 @@ import Router, { useRouter }  from 'next/router'
 import Head from '@/components/ui/head';
 import Header from '@/components/ui/header'
 
-const GrantPage = () => {
+const GrantPage = (props) => {
     const {className} = props;
     const [grants, setGrants] = useState([]);
 

@@ -9,10 +9,7 @@ import Card from "@/components/ui/card"
 import CardHeader from "@/components/ui/card/header"
 import CardBody from "@/components/ui/card/body"
 import Table from "@/components/ui/table";
-import DataEngine from "@/components/forms/dataengine";
-import SupportForm from "@/components/forms/help/support";
 
-import { DataEngineUrls } from "@/actions/dataengine/urls";
 import { getUserToken, getCookie } from  '@/actions/user/actions'
 
 import Modal from 'react-bootstrap/Modal'
@@ -39,7 +36,6 @@ const AddSupport = (props) => {
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body className="pd-sm-t-30 pd-sm-b-40 pd-sm-x-30">
-                    <AddAssetForm asset_id={asset_id} className="mg-t-10 pd-x-20"/>
                 </Modal.Body>
             </Modal>
             :
@@ -50,7 +46,6 @@ const AddSupport = (props) => {
                         <p className="d-none d-md-flex tx-12 tx-color-03 mg-b-0">Total Support Requests: 2 hours ago</p>
                     </CardHeader>
                     <CardBody>
-                        <SupportForm className="mg-t-10"/>
                     </CardBody>
                 </Card>
             </div>

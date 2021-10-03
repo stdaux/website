@@ -19,7 +19,6 @@ import { FaDribbble, FaTwitter, FaGithub, FaFacebook, FaUser } from "react-icons
 import { ImEarth } from "react-icons/im";
 import {FermatUrls} from "@/actions/fermat/urls"
 import moment from "moment";
-import ViewAsset from "@/components/widgets/asset/view";
 import { HelpUrls } from "@/actions/help/urls";
 import { getUserToken, getCookie } from  '@/actions/user/actions'
 

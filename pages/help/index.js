@@ -5,20 +5,9 @@ import cx from 'classnames';
 import moment from 'moment';
 
 import Head from '@/components/ui/head';
-import Login from '@/components/forms/user/login'
-
-import Card from '@/components/ui/card'
-import CardHeader from "@/components/ui/card/header"
-import CardBody from "@/components/ui/card/body"
-import CardFooter from "@/components/ui/card/footer"
 
 import Header from '@/components/ui/header'
 import Footer from '@/components/ui/footer'
-import Aside from '@/components/ui/aside'
-import Avatar from "@/components/ui/avatar"
-import Markdown from '@/components/ui/markdown'
-import Tip from "@/components/ui/tip"
-import ListDashboard from "@/components/widgets/dashboard/list"
 import { FiEdit3, FiImage, FiVideo, FiFileText, FiBriefcase, FiPhone, FiHome, FiSmartphone, FiMail, FiGift, FiSearch } from "react-icons/fi";
 import { IoIosCog, IoIosLaptop, IoIosCart, IoIosFiling, IoMdArrowForward } from "react-icons/io";
 import { getUserProfile } from "@/actions/user/actions";

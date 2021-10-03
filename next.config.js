@@ -3,7 +3,6 @@ require('dotenv').config({path:__dirname+'./.env'})
 const path = require('path');
 const webpack = require('webpack');
 const os = require('os');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const { name } = require('./package.json');
 
