@@ -12,6 +12,7 @@ const dirNode = 'node_modules';
 const dirApp = path.join(__dirname, 'examples', 'react', 'src');
 const dirAssets = path.join(__dirname, 'assets');
 const appHtmlTitle = name;
+const debug = process.env.NODE_ENV !== "production";
 
 module.exports = {
     entry: {
