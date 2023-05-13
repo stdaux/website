@@ -134,5 +134,6 @@ module.exports = {
     },
     output: {
         globalObject: "this",
-    }
+    },
+    assetPrefix: !debug ? 'https://anotherplanet-io.github.io/Next-React-Components/' : '',
 }
