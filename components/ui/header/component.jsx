@@ -128,7 +128,7 @@ const Header = (props) => {
                                 <li className="animated-wrap"><a href={process.env.INSTAGRAM_LINK} className="animated-element"><FiInstagram/></a> </li>
                                 }
                             </ul>
-                            <p className="whitecolor">&copy; 2021 Pioneer Power Systems. Made With Love by <a className="web-link text-white" href="https://stdaux.com/design">Design Team of StdAux</a></p>
+                            <p className="whitecolor">&copy; 2021 Standard Auxiliary Private Limited. Made With Love by <a className="web-link text-white" href="https://stdaux.com/design">Design Team of StdAux</a></p>
                         </div>
                     </div>
                 </div>
