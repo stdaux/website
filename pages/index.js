@@ -200,14 +200,6 @@ const Main = (props) => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="row pos-absolute b-90 wd-35p">
-                                        <div className="col-lg-6 text-center">
-                                            <button type="button" className="btn btn-dark rounded-pill btn-block">Contact Us</button>
-                                        </div>
-                                        <div className="col-lg-6 text-center">
-                                            <button type="button" className="btn btn-light rounded-pill btn-block">Learn More</button>
-                                        </div>
-                                    </div>
                                     <div className="row pos-absolute b-30 mg-t-20">
                                         <ul className="nav justify-content-center">
                                             <a className="nav-link tx-roboto tx-white" href="https://stdaux.com">StdAux © 2021</a>
