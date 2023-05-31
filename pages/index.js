@@ -137,30 +137,6 @@ const Main = (props) => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="pos-absolute b-50 wd-60p">
-                                        <div className="row">
-                                            <div className="col-lg-3 col-sm-6 pd-5">
-                                                <a href="/research">
-                                                    <button type="button" className="btn btn-light rounded-pill btn-block">Research Areas</button>
-                                                </a>
-                                            </div>
-                                            <div className="col-lg-3 col-sm-6 pd-5">
-                                                <a href="/research/grant/apply">
-                                                    <button type="button" className="btn btn-light rounded-pill btn-block">Apply For Grant</button>
-                                                </a>
-                                            </div>
-                                            <div className="col-lg-3 pd-5">
-                                                <a href="/research/publications">
-                                                    <button type="button" className="btn btn-light rounded-pill btn-block">View Publications</button>
-                                                </a>
-                                            </div>
-                                            <div className="col-lg-3 pd-5">
-                                                <a href="/research/active">
-                                                    <button type="button" className="btn btn-light rounded-pill btn-block">Active Research</button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </section>
                             {/* 
@@ -245,13 +221,9 @@ const Main = (props) => {
                                     <div className="row pos-absolute b-30 mg-t-20">
                                         <ul className="nav justify-content-center">
                                             <a className="nav-link tx-roboto tx-white" href="https://stdaux.com">StdAux © 2021</a>
-                                            <a className="nav-link tx-roboto tx-white" href="/legal">Legal</a>
-                                            <a className="nav-link tx-roboto tx-white" href="/news">News</a>
                                             <a className="nav-link tx-roboto tx-white" href="/locations">Locations</a>
                                             <a className="nav-link tx-roboto tx-white" href="/research">Research</a>
-                                            <a className="nav-link tx-roboto tx-white" href="/philantrophy">Philantrophy</a>
                                             <a className="nav-link tx-roboto tx-white" href="/contact">Contact</a>
-                                            <a className="nav-link tx-roboto tx-white" href="/careers">Careers</a>
                                         </ul>
                                     </div>
                                 </div>
