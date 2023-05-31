@@ -109,16 +109,6 @@ const Main = (props) => {
                                             </Card>
                                         </div>
                                     </div>
-                                    <div className="pos-absolute b-50 wd-30p">
-                                        <div className="row">
-                                            <div className="col-lg-6 pd-5">
-                                                <button type="button" className="btn btn-dark rounded-pill btn-block">Explore Service</button>
-                                            </div>
-                                            <div className="col-lg-6 pd-5">
-                                                <button type="button" className="btn btn-light rounded-pill btn-block">Learn More</button>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                                 <div className="pos-absolute b-10 l-10 bg-white">
                                     <p className="tx-black tx-10 mg-x-5 mg-y-0">Money-back guarantee</p>
