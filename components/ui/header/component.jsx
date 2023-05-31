@@ -50,7 +50,7 @@ const Header = (props) => {
                         </div>
                         <div className="d-flex align-items-center">
                             <div className="mg-x-10 justify-content-center">
-                                <a href="https://internal.stdaux.com/login" className="tx-spacing-1 link-03 tx-white tx-uppercase">Login</a>
+                                <a href="https://internal.stdaux.com" className="tx-spacing-1 link-03 tx-white tx-uppercase">Login</a>
                             </div>
                             {!sideMenuActive &&
                             <div className="d-flex align-items-center mg-x-10 justify-content-center" onClick={() => setSideMenuActive(!sideMenuActive)}>
@@ -79,15 +79,6 @@ const Header = (props) => {
                             </div>
                             <div className="col-lg-2 col-sm-4">
                                 <h2 className="tx-roboto tx-white">Research</h2>
-                                <a href="/research/active">
-                                    <h6 className="tx-lato tx-white">Active Research</h6>
-                                </a>
-                                <a href="/research/publications">
-                                    <h6 className="tx-lato tx-white">Publications</h6>
-                                </a>
-                                <a href="/research/patents">
-                                    <h6 className="tx-lato tx-white">Patents</h6>
-                                </a>
                                 <a href="/research/grants/apply">
                                     <h6 className="tx-lato tx-white">Apply for Grant</h6>
                                 </a>
@@ -100,50 +91,11 @@ const Header = (props) => {
                                 <a href="/legals/supplier-code-of-confuct">
                                     <h6 className="tx-lato tx-white">Suppliers Code of Conduct</h6>
                                 </a>
-                                <a href="/quality/process">
-                                    <h6 className="tx-lato tx-white">QAP Process</h6>
-                                </a>
-                                <a href="/partners/register">
-                                    <h6 className="tx-lato tx-white">Partner Registeration</h6>
-                                </a>
-                            </div>
-                            <div className="col-lg-2 col-sm-4">
-                                <h2 className="tx-roboto tx-white">Policies</h2>
-                                <a href="/legals/hse-policy">
-                                    <h6 className="tx-lato tx-white">Health, Safety & Enviroment Policy</h6>
-                                </a>
-                                <a href="/legals/privacy-policy">
-                                    <h6 className="tx-lato tx-white">Privacy Policy</h6>
-                                </a>
-                                <a href="/legals/employee-code-of-conduct">
-                                    <h6 className="tx-lato tx-white">Employee Code of Conduct</h6>
-                                </a>
-                                <a href="/legals/certificates">
-                                    <h6 className="tx-lato tx-white">Certificates</h6>
-                                </a>
-                                <a href="/legals">
-                                    <h6 className="tx-lato tx-white">Legals</h6>
-                                </a>
                             </div>
                             <div className="col-lg-2 col-sm-4">
                                 <h2 className="tx-roboto tx-white">Company</h2>
-                                <a href="/about">
-                                    <h6 className="tx-lato tx-white">About Us</h6>
-                                </a>
-                                <a href="/philantrophy">
-                                    <h6 className="tx-lato tx-white">Philantrophy</h6>
-                                </a>
                                 <a href="/locations">
                                     <h6 className="tx-lato tx-white">Locations</h6>
-                                </a>
-                                <a href="/careers">
-                                    <h6 className="tx-lato tx-white">Careers</h6>
-                                </a>
-                                <a href="/blog">
-                                    <h6 className="tx-lato tx-white">Blog</h6>
-                                </a>
-                                <a href="/news">
-                                    <h6 className="tx-lato tx-white">News</h6>
                                 </a>
                             </div>
                         </div>
@@ -154,13 +106,7 @@ const Header = (props) => {
                                     <a className="nav-link link" href="/">Home</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link link" href="/services">Services</a>
-                                </li>
-                                <li className="nav-item">
                                     <a className="nav-link link" href="/research">Research</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link link" href="/about">About Us</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link link" href="/locations">Locations</a>
