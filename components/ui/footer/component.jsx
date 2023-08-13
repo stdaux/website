@@ -102,7 +102,6 @@ const Footer = (props) => {
                                 <li><Link href="/about"><a><span className="tx-white tx-16 mg-0">About Us</span></a></Link></li>
                                 <li><Link href="/team"><a><span className="tx-white tx-16 mg-0">Our Team</span></a></Link></li>
                                 <li><Link href="/careers"><a><span className="tx-white tx-16 mg-0">Careers</span></a></Link></li>
-                                <li><Link href="/press"><a><span className="tx-white tx-16 mg-0">Press</span></a></Link></li>
                                 <li><Link href="/research/publications"><a><span className="tx-white tx-16 mg-0">Publications</span></a></Link></li>
                                 <li><Link href="/open/data"><a><span className="tx-white tx-16 mg-0">Data & Earth Insights</span></a></Link></li>
                                 <li><Link href="/open/data"><a><span className="tx-white tx-16 mg-0">Stand for Earth</span></a></Link></li>
@@ -126,7 +125,6 @@ const Footer = (props) => {
                     <a href="/legal/privacy-policy" className="nav-link">Privacy Policy</a>
                     <a href="/legal/terms-service-agreement" className="nav-link">Terms of Service</a>
                     <a href="https://fermat.stdaux.com/support" className="nav-link">Support on Fermat</a>
-                    <a href="https://stdaux.com/contact" className="nav-link">Contact StdAux</a>
                 </nav>
             </div>
         </footer>
