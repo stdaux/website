@@ -351,7 +351,7 @@ const ResearchPage = () => {
                                     <ul className="nav justify-content-center">
                                         <a className="nav-link tx-roboto tx-white" href="https://stdaux.com">StdAux © 2021</a>
                                         <a className="nav-link tx-roboto tx-white" href="/legal">Legal</a>
-                                        <a className="nav-link tx-roboto tx-white" href="/news">News</a>
+                                        <a className="nav-link tx-roboto tx-white" href="#">News</a>
                                         <a className="nav-link tx-roboto tx-white" href="/locations">Locations</a>
                                         <a className="nav-link tx-roboto tx-white" href="/research">Research</a>
                                         <a className="nav-link tx-roboto tx-white" href="/philantrophy">Philantrophy</a>
