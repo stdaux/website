@@ -317,7 +317,7 @@ const Main = (props) => {
                                                 </a>
                                             </div>
                                             <div className="col-lg-3 pd-5">
-                                                <a href="/research/active">
+                                                <a href="#">
                                                     <button type="button" className="btn btn-light rounded-pill btn-block">Active Research</button>
                                                 </a>
                                             </div>
