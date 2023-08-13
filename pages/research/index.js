@@ -103,7 +103,7 @@ const ResearchPage = () => {
                                             </a>
                                         </div>
                                         <div className="col-lg-4 pd-5">
-                                            <a href="/research/active">
+                                            <a href="#">
                                                 <button type="button" className="btn btn-light rounded-pill btn-block">View Active Research</button>
                                             </a>
                                         </div>
