@@ -205,7 +205,6 @@ const Main = (props) => {
                                             <a className="nav-link tx-roboto tx-white" href="https://stdaux.com">StdAux © 2021</a>
                                             <a className="nav-link tx-roboto tx-white" href="/locations">Locations</a>
                                             <a className="nav-link tx-roboto tx-white" href="/research">Research</a>
-                                            <a className="nav-link tx-roboto tx-white" href="/contact">Contact</a>
                                         </ul>
                                     </div>
                                 </div>
