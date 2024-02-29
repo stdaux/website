@@ -55,7 +55,7 @@ const Main = (props) => {
                 render={({ state, fullpageApi }) => {
                     return (
                         <div>
-                            <section className="section bg-home">
+                            <section className="section bg-renewable">
                                 <div className="bg-overlay bg-black op-6">
                                 </div>
                                 <div className="container full-screen pd-5 d-flex justify-content-center flex-column align-items-center">
